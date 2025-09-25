@@ -11,17 +11,17 @@ Thu thập và xử lý dữ liệu chất lượng không khí (PM2.5, PM10, kh
 Phân tích xu hướng biến động nồng độ bụi mịn PM2.5.
 Ứng dụng mô hình học máy để dự báo nồng độ PM2.5 trong ngắn hạn.
 
-### Công nghệ sử dụng 
+## Công nghệ sử dụng 
 
 - GitHub Actions: Tự động hóa việc thu thập dữ liệu, đảm bảo tính minh bạch và có thể theo dõi lịch sử thay đổi
 - Python: Ngôn ngữ lập trình chính được sử dụng để crawl dữ liệu
 - CSV: Định dạng lưu trữ dữ liệu
   
-#### Cấu trúc dữ liệu
+## Cấu trúc dữ liệu
 
 Dữ liệu được lưu trữ trong các file CSV, được cập nhật định kỳ. Bạn có thể tìm thấy dữ liệu tại thư mục result/.
 
-##### Nguyên lý hoạt động
+## Nguyên lý hoạt động
 
 Dự án sử dụng bot tự động để thu thập dữ liệu từ trang web iqair.com với chu kỳ 1 giờ/lần. Các thông tin được thu thập bao gồm:
 -Thời gian đo
@@ -38,6 +38,6 @@ Dự án sử dụng bot tự động để thu thập dữ liệu từ trang we
 - so2
 - co
   
-###### Tần suất cập nhật
+## Tần suất cập nhật
 
 Dữ liệu được cập nhật tự động mỗi giờ thông qua GitHub Actions, đảm bảo tính liên tục và độ tin cậy của dữ liệu.
