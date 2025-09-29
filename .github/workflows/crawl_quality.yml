@@ -1,10 +1,13 @@
 
 name: Crawl Quality Data
 
+name: Crawl Quality Data
+
 on:
   schedule:
-    - cron: '0 */1 * * *'  # Run every 4 hours
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 */4 * * *'   # chạy 4 tiếng 1 lần
+  workflow_dispatch:         # cho phép chạy thủ công
+
 
 jobs:
   crawl-and-update:
