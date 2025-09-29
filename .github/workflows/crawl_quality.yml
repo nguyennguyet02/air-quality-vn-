@@ -1,5 +1,5 @@
 
-name: Crawl Quality Data
+name: Crawl quality Data
 
 on:
   schedule:
