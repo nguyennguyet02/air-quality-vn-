@@ -1,5 +1,5 @@
 
-name: Crawl IQAir Data
+name: Crawl Quality Data
 
 on:
   schedule:
