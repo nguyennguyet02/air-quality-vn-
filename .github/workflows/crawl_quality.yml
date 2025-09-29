@@ -1,8 +1,6 @@
 
 name: Crawl Quality Data
 
-name: Crawl Quality Data
-
 on:
   schedule:
     - cron: '0 */4 * * *'   # chạy 4 tiếng 1 lần
