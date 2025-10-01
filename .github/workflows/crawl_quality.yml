@@ -27,7 +27,7 @@ jobs:
           pip install numpy --upgrade
           pip install pandas --upgrade
       - name: Run crawler
-        run: python crawl_quality.py
+        run: python crawl_iquality.py
       
       - name: Merge CSV files
         run: python merge_csv.py
