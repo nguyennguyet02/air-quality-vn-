@@ -6,6 +6,7 @@ import os
 desired_cities = ["hanoi", "thai-nguyen", "ho-chi-minh-city", "tra-vinh","hai-duong", "hue"]  # Thêm "ho-chi-minh" nếu cần
 
 csv_files = glob.glob('result/**/*.csv', recursive=True)
+print("Found CSV files:", csv_files)
 
 df_list = []
 for file in csv_files:
