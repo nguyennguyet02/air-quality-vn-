@@ -76,13 +76,15 @@ def get_vietnam_time():
     return datetime.now(ZoneInfo("Asia/Bangkok"))  # Bangkok uses GMT+7 like Vietnam
 
 
-def validate_aqi(aqi: str) -> Optional[str]:
-    """Validate AQI value"""
+def validate_pm25(pm25: str) -> Optional[str]:
+    """Validate PM2.5 value (µg/m³)"""
     try:
-        # Remove any non-digit characters and convert to int
-        aqi_value = int(re.sub(r'\D', '', aqi))
-        if 0 <= aqi_value <= 500:  # Valid AQI range
-            return str(aqi_value)
+        # Loại bỏ ký tự không phải số hoặc dấu chấm thập phân
+        pm25_value = float(re.sub(r'[^0-9.]', '', pm25))
+        
+        # PM2.5 thường nằm trong khoảng 0 - 500 µg/m³ (theo chuẩn AQI mở rộng)
+        if 0 <= pm25_value <= 500:
+            return str(pm25_value)
     except (ValueError, TypeError):
         pass
     return None
